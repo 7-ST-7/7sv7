@@ -1,1 +1,1 @@
-# 7ST7-Tech-Serwis.github.io
+# 7ST7.github.io
