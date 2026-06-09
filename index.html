@@ -1,156 +1,302 @@
 <!DOCTYPE html>
 <html lang="pl">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>7SV7 Tech Serwis</title>
-    <style>
-        body {
-            margin: 0;
-            font-family: Arial, Helvetica, sans-serif;
-            background: #0f172a;
-            color: #f8fafc;
-        }
-        header {
-            background: linear-gradient(135deg, #0ea5e9, #2563eb);
-            padding: 40px 20px;
-            text-align: center;
-        }
-        header h1 {
-            margin: 0;
-            font-size: 2.2em;
-        }
-        header p {
-            margin-top: 10px;
-            font-size: 1.1em;
-        }
-        section {
-            padding: 40px 20px;
-            max-width: 1000px;
-            margin: auto;
-        }
-        h2 {
-            color: #38bdf8;
-        }
-        .services, .prices {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 20px;
-        }
-        .box {
-            background: #020617;
-            padding: 20px;
-            border-radius: 10px;
-            box-shadow: 0 0 10px rgba(0,0,0,0.4);
-        }
-        .box ul {
-            padding-left: 20px;
-        }
-        .contact {
-            background: #020617;
-            border-radius: 10px;
-            padding: 30px;
-            text-align: center;
-        }
-        footer {
-            text-align: center;
-            padding: 20px;
-            background: #020617;
-            font-size: 0.9em;
-            color: #94a3b8;
-        }
-        .btn {
-            display: inline-block;
-            margin-top: 15px;
-            padding: 12px 25px;
-            background: #38bdf8;
-            color: #020617;
-            text-decoration: none;
-            font-weight: bold;
-            border-radius: 30px;
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Profesjonalna naprawa telefonów, laptopów, tabletów i elektroniki użytkowej. Szybka diagnoza, uczciwe ceny, gwarancja na usługi.">
+  <title>7SV7 Tech Serwis — Serwis naprawy elektroniki</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&family=JetBrains+Mono:wght@500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+  <header class="header" id="top">
+    <nav class="nav container">
+      <a href="#top" class="logo">
+        <span class="logo-icon" aria-hidden="true">⚡</span>
+        7SV7 Tech Serwis
+      </a>
+      <button class="nav-toggle" aria-label="Otwórz menu" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <ul class="nav-links">
+        <li><a href="#uslugi">Usługi</a></li>
+        <li><a href="#jak-dzialamy">Jak działamy</a></li>
+        <li><a href="#cennik">Cennik</a></li>
+        <li><a href="#opinie">Opinie</a></li>
+        <li><a href="#kontakt" class="btn btn-sm">Kontakt</a></li>
+      </ul>
+    </nav>
+  </header>
 
-<header>
-    <h1>7SV7 Tech Serwis</h1>
-    <p>PC • Laptopy • Telefony • Konsole</p>
-    <p> Międzyzdroje</p>
-</header>
+  <main>
+    <section class="hero">
+      <div class="hero-bg" aria-hidden="true"></div>
+      <div class="container hero-content">
+        <div class="hero-badge">Naprawa w 24–48 h</div>
+        <h1>Twój sprzęt zasługuje na <span class="text-accent">drugie życie</span></h1>
+        <p class="hero-lead">
+          Naprawiamy telefony, laptopy, konsole. Bezpłatna diagnoza,
+          oryginalne i sprawdzone części zamienne oraz 90 dni gwarancji na każdą usługę.
+        </p>
+        <div class="hero-actions">
+          <a href="#kontakt" class="btn btn-primary">Umów naprawę</a>
+          <a href="tel:+48123456789" class="btn btn-ghost">Zadzwoń: 669 181 998</a>
+        </div>
+        <ul class="hero-stats">
+          <li>
+            <strong>100 +</strong>
+            <span>naprawionych urządzeń</span>
+          </li>
+          <li>
+            <strong>4.9/5</strong>
+            <span>średnia ocen klientów</span>
+          </li>
+          <li>
+            <strong>0 zł</strong>
+            <span>diagnoza przy naprawie</span>
+          </li>
+        </ul>
+      </div>
+    </section>
 
-<section>
-    <h2>Serwis</h2>
-    <p>
-        Oferuję drobne naprawy i serwis elektroniki. Stawiam na uczciwe ceny,
-        szybką realizację oraz rzetelną diagnozę sprzętu.
-    </p>
-</section>
+    <section class="section" id="uslugi">
+      <div class="container">
+        <header class="section-header">
+          <span class="section-label">Co naprawiamy</span>
+          <h2>Usługi serwisowe</h2>
+          <p>Od wymiany ekranu po odzyskiwanie danych — kompleksowa obsługa w jednym miejscu.</p>
+        </header>
+        <div class="cards-grid">
+          <article class="card">
+            <div class="card-icon">📱</div>
+            <h3>Smartfony i tablety</h3>
+            <p>Wymiana wyświetlaczy, baterii, gniazd ładowania, naprawa po zalaniu i wymiana kamery.</p>
+          </article>
+          <article class="card">
+            <div class="card-icon">💻</div>
+            <h3>Laptopy i komputery</h3>
+            <p>SSD, RAM, czyszczenie i pasta termiczna, naprawa klawiatury, matrycy i płyty głównej.</p>
+          </article>
+          <article class="card">
+            <div class="card-icon">🎮</div>
+            <h3>Konsole i kontrolery</h3>
+            <p>Drift analogów, naprawa zasilania, HDMI, napędów optycznych i chłodzenia.</p>
+          </article>
+          <article class="card">
+            <div class="card-icon">💾</div>
+            <h3>Odzyskiwanie danych</h3>
+            <p>Bezpieczne odzyskiwanie plików z uszkodzonych dysków i telefonów — poufność gwarantowana.</p>
+          </article>
+          <article class="card">
+            <div class="card-icon">🛡️</div>
+            <h3>Zabezpieczenia</h3>
+            <p>Folie ochronne, szkła hartowane i konfiguracja kopii zapasowych po naprawie.</p>
+          </article>
+        </div>
+      </div>
+    </section>
 
-<section>
-    <h2>Zakres usług</h2>
-    <div class="services">
-        <div class="box">
-            <ul>
-                <li>Czyszczenie z kurzu</li>
-                <li>Wymiana pasty termoprzewodzącej</li>
-                <li>Konserwacja laptopów i PC</li>
-            </ul>
+    <section class="section section-alt" id="jak-dzialamy">
+      <div class="container">
+        <header class="section-header">
+          <span class="section-label">Prosty proces</span>
+          <h2>Jak to działa?</h2>
+        </header>
+        <ol class="steps">
+          <li class="step">
+            <span class="step-num">01</span>
+            <div>
+              <h3>Zgłoszenie</h3>
+              <p>Przyjdź do punktu, wyślij formularz lub zadzwoń. Opisz usterkę — podpowiemy, co dalej.</p>
+            </div>
+          </li>
+          <li class="step">
+            <span class="step-num">02</span>
+            <div>
+              <h3>Diagnoza</h3>
+              <p>Sprawdzamy urządzenie i przedstawiamy wycenę. Bez ukrytych kosztów — akceptujesz, zanim zaczniemy.</p>
+            </div>
+          </li>
+          <li class="step">
+            <span class="step-num">03</span>
+            <div>
+              <h3>Naprawa</h3>
+              <p>Używamy sprawdzonych części. Większość napraw realizujemy tego samego lub następnego dnia.</p>
+            </div>
+          </li>
+          <li class="step">
+            <span class="step-num">04</span>
+            <div>
+              <h3>Odbiór z gwarancją</h3>
+              <p>Testujemy sprzęt przed wydaniem. 90-dniową gwarancję na wykonaną usługę.</p>
+            </div>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <section class="section" id="cennik">
+      <div class="container">
+        <header class="section-header">
+          <span class="section-label">Przejrzyste ceny</span>
+          <h2>Przykładowy cennik</h2>
+          <p>Ostateczna kwota zależy od modelu urządzenia. Diagnoza bezpłatna przy zleceniu naprawy.</p>
+        </header>
+        <div class="pricing-table-wrap">
+          <table class="pricing-table">
+            <thead>
+              <tr>
+                <th>Usługa</th>
+                <th>Czas</th>
+                <th>Od</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Wymiana baterii w smartfonie</td>
+                <td>1–2 h</td>
+                <td class="price">149 zł</td>
+              </tr>
+              <tr>
+                <td>Wymiana wyświetlacza</td>
+                <td>2–4 h</td>
+                <td class="price">199 zł</td>
+              </tr>
+              <tr>
+                <td>Naprawa po zalaniu</td>
+                <td>24–48 h</td>
+                <td class="price">100 zł</td>
+              </tr>
+              <tr>
+                <td>Wymiana dysku SSD w laptopie</td>
+                <td>2–3 h</td>
+                <td class="price">120 zł + część</td>
+              </tr>
+              <tr>
+                <td>Czyszczenie + pasta termiczna</td>
+                <td>1–2 h</td>
+                <td class="price">99 zł</td>
+              </tr>
+              <tr>
+                <td>Odzyskiwanie danych</td>
+                <td>1–5 dni</td>
+                <td class="price">od 199 zł</td>
+              </tr>
+            </tbody>
+          </table>
         </div>
-        <div class="box">
-            <ul>
-                <li>Wymiana baterii</li>
-                <li>Wymiana wyświetlaczy</li>
-                <li>Naprawy telefonów</li>
-            </ul>
+      </div>
+    </section>
+
+    <section class="section section-alt" id="opinie">
+      <div class="container">
+        <header class="section-header">
+          <span class="section-label">Zaufali nam</span>
+          <h2>Opinie klientów</h2>
+        </header>
+        <div class="testimonials">
+          <blockquote class="testimonial">
+            <p>Bardzo polecam ten serwis. Oddałem PS4 na czyszczenie, wszystko zostało zrobione szybko i dokładnie. Konsola działa ciszej i lepiej niż wcześniej. Miła obsługa i uczciwa cena. Na pewno jeszcze skorzystam z usług.</p>
+            <footer>
+              <strong>Bape</strong>
+              <span>PS 4 - Czyszczenie i wymiana pasty termoprzewodzącej</span>
+            </footer>
+          </blockquote>
+          <blockquote class="testimonial">
+            <p>„Bardzo fajny servis, czyszczenia + wymiana pasty i moja ps4 lata jak nowa. Polecam</p>
+            <footer>
+              <strong>Dima Y.</strong>
+              <span>PS 4 Pro - Czyszczenie i wymiana pasty termoprzewodzącej</span>
+            </footer>
+          </blockquote>
         </div>
-        <div class="box">
-            <ul>
-                <li>Wymiana podzespołów</li>
-                <li>Rozbudowa RAM / dysków</li>
-                <li>Serwis konsol</li>
-            </ul>
+      </div>
+    </section>
+
+    <section class="section cta-banner">
+      <div class="container cta-banner-inner">
+        <div>
+          <h2>Pilna naprawa?</h2>
+          <p>Usługa ekspresowa dostępna za dopłatą 49 zł — realizacja w ciągu 4 godzin (w zależności od części).</p>
         </div>
+        <a href="tel:+48669181998" class="btn btn-primary">Zadzwoń teraz</a>
+      </div>
+    </section>
+
+    <section class="section" id="kontakt">
+      <div class="container contact-grid">
+        <div class="contact-info">
+          <header class="section-header section-header-left">
+            <span class="section-label">Kontakt</span>
+            <h2>Umów wizytę</h2>
+            <p>Odpowiadamy w ciągu 2 godzin.</p>
+          </header>
+          <ul class="contact-details">
+            <li>
+              <span class="contact-label">Adres</span>
+              Miedzyzdroje 72-500
+            </li>
+            <li>
+              <span class="contact-label">Telefon</span>
+              <a href="tel:+48123456789">+48 669 181 998</a>
+            </li>
+            <li>
+              <span class="contact-label">E-mail</span>
+              <a href="77ST77@proton.me">77ST77@proton.me</a>
+            </li>
+            <li>
+              <span class="contact-label">Godziny</span>
+              Codzienie 24h
+            </li>
+          </ul>
+        </div>
+        <form class="contact-form" id="contact-form" novalidate>
+          <div class="form-row">
+            <label for="name">Imię i nazwisko</label>
+            <input type="text" id="name" name="name" required autocomplete="name" placeholder="Jan Kowalski">
+          </div>
+          <div class="form-row">
+            <label for="phone">Telefon</label>
+            <input type="tel" id="phone" name="phone" required autocomplete="tel" placeholder="+48 600 000 000">
+          </div>
+          <div class="form-row">
+            <label for="device">Urządzenie</label>
+            <select id="device" name="device" required>
+              <option value="">Wybierz typ</option>
+              <option>Smartfon / tablet</option>
+              <option>Laptop / komputer</option>
+              <option>Konsola / kontroler</option>
+              <option>Inne</option>
+            </select>
+          </div>
+          <div class="form-row">
+            <label for="message">Opis usterki</label>
+            <textarea id="message" name="message" rows="4" required placeholder="Np. nie ładuje się, pęknięty ekran…"></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary btn-full">Wyślij zgłoszenie</button>
+          <p class="form-note" id="form-status" role="status" aria-live="polite"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <a href="#top" class="logo">
+          <span class="logo-icon" aria-hidden="true">⚡</span>
+          7SV7 Tech Serwis
+        </a>
+        <p>Profesjonalny serwis elektroniki od 2025 roku.</p>
+      </div>
+      <p class="footer-copy">© 2026 7ST7 Tech Serwis. Wszystkie prawa zastrzeżone.</p>
     </div>
-</section>
+  </footer>
 
-<section>
-    <h2>Cennik (orientacyjny)</h2>
-    <div class="prices">
-        <div class="box">
-            <strong>Czyszczenie + pasta</strong>
-            <p>150–180 zł</p>
-        </div>
-        <div class="box">
-            <strong>Wymiana baterii</strong>
-            <p>Zalezy od modeli telefona</p>
-            <p>100–150 zł + część</p>
-        </div>
-        <div class="box">
-            <strong>Wymiana wyświetlacza</strong>
-            <p>Zalezy od modeli telefona</p>
-            <p>150–250 zł + część</p>
-        </div>
-        <div class="box">
-            <strong>Diagnostyka</strong>
-            <p>Gratis przy naprawie</p>
-        </div>
-    </div>
-</section>
-
-<section>
-    <h2>Kontakt</h2>
-    <div class="contact">
-        <p> Międzyzdroje</p>
-        <p> Email: <strong>77st77@proton.me</strong></p>
-        <p> Telefon: <strong>+48 669-181-998</strong> </p>
-        <a class="btn" href="tel:669181998">Napisz wiadomość</a>
-    </div>
-</section>
-
-<footer>
-    © 2026 7SV7 Tech Serwis
-</footer>
-
+  <script src="script.js"></script>
 </body>
 </html>
